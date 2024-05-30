@@ -1,3 +1,4 @@
+# 392. Is Subsequence
 # Intuition
 We need to ensure two things:
 
@@ -17,10 +18,12 @@ to begin searching for the next character in `s`. Continue until either `s` or `
 This approach ensures that even if all the characters in `s` exist in `t`, we only consider them in the same order they occur in `s`. This satisfies our two 
 required conditions.
 
-Complexity
-* Time complexity: $$O(n)$$, where nnn is the larger of s.length and t.length
-Space complexity: O(1)O(1)O(1)
-Code
+# Complexity
+* Time complexity: `O(n)`, where nnn is the larger of s.length and t.length
+* Space complexity: `O(1)`
+  
+# Code
+```python
 class Solution:
     def isSubsequence(self, s: str, t: str) -> bool:
         s_pos = 0
@@ -32,3 +35,4 @@ class Solution:
                 s_pos += 1
             t_pos += 1
         return sequence == s
+```
