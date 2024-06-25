@@ -1,5 +1,6 @@
 # Intuition
 <!-- Describe your first thoughts on how to solve this problem. -->
+We need to iterate through the list, identifying pairs of nodes and swapping the order they appear in.
 
 # Approach
 <!-- Describe your approach to solving the problem. -->
