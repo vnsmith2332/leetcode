@@ -58,7 +58,7 @@ Then, we iterate over the keys in the has table and, for each key, we check if `
 form by summing the occurrences of the two digits. Save the greater of `max_length` and the length of the current harmonious subsequence.
 
 ### Complexity
-- Time complexity: `O(n + m)` where `n` is the length of the input array and `m` is the number of distinct elements in the input array.
+- Time complexity: `O(n + m)` where `n` is the length of the input array and `m` is the number of *distinct* elements in the input array.
   The counting approach requires us to iterate over the input array a single time (`O(n)`) and then over a hash table of distinct elements (`O(m)`).
 <!-- Add your time complexity here, e.g. $$O(n)$$ -->
 
